@@ -1,0 +1,16 @@
+{
+ "01-walk": {
+  "recipe": "d79a55915ef6c8d2",
+  "job": "j_ee233e506e21",
+  "made": "2026-10-17T23:34:28.994Z",
+  "outputs": {
+   "render.beauty": "a_925cd3fbbcbe5fa1",
+   "render.depth": "a_2db9beba839c75ef",
+   "render.pose": "a_640fb23490af0e5a",
+   "render.edges": "a_00cc6e8ce5f64eab",
+   "render.first-frame": "a_7a0c6e084c21e463",
+   "look": "a_5a5d8c6b56fcb1c4",
+   "video": "a_3ef27a46a51b5368"
+  }
+ }
+}
