@@ -1,0 +1,4 @@
+node_modules/
+productions/*/out/
+*.log
+.env

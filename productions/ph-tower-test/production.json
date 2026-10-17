@@ -1,0 +1,10 @@
+{
+ "id": "ph-tower-test",
+ "title": "PH Origins: a night walk in Hawkes Tower (pipeline test)",
+ "project": "phorigins",
+ "format": { "width": 1280, "height": 704, "fps": 24 },
+ "look": "Grounded, cinematic corporate thriller look: one night in Hawkes Tower, cool artificial light, deep shadows, rain-wet city.",
+ "cast": { "hero": "ph-ch33-hero" },
+ "candidates": 3,
+ "note": "The first production: two short shots to prove Blender -> look -> video.control end to end."
+}

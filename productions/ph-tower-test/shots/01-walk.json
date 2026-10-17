@@ -1,0 +1,13 @@
+{
+ "id": "01-walk",
+ "seconds": 5,
+ "shot": {
+  "characters": [{ "cast": "hero", "animation": "Walk", "facing": 90, "travel": 1.3 }],
+  "ground": { "color": "#1c1f24" },
+  "lights": "night",
+  "camera": { "move": "follow", "angle": 70, "distance": 4.5, "height": 1.5, "lens": 35, "handheld": 0.4 }
+ },
+ "look": "He walks along a rain-wet street at the foot of Hawkes Tower at night, glass and steel behind him, cold streetlight.",
+ "motion": "A man in a dark suit walks steadily along the wet street, the camera tracking beside him. Footsteps splash, rain hisses, a distant siren.",
+ "control": "depth"
+}

@@ -1,0 +1,8 @@
+{
+ "cuts": [
+  { "shot": "01-walk" },
+  { "shot": "02-look-up", "transition": "cut" }
+ ],
+ "audio": "audio.json",
+ "captions": []
+}

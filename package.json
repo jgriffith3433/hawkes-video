@@ -1,0 +1,11 @@
+{
+  "name": "hawkes-video",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Hawkes videos as data: productions, shots and edits that Hawkes Gen makes from the Hawkes Assets cast.",
+  "scripts": {
+    "check": "node tools/check.mjs",
+    "make": "node tools/make.mjs"
+  }
+}
