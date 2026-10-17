@@ -1,4 +1,5 @@
-// Checks every production (CI runs this): the files parse, shots have what they need, the edit names real shots, and,
+// Checks every production (CI runs this): the files parse, shots have what they need, edit.json and audio.json are a
+// cut video.compose can make (tools/cutplan.mjs), and,
 // where Hawkes Assets is next to this repo, every shot turns into a recipe (the cast and their animations exist).
 //
 //   node tools/check.mjs [production]
@@ -6,6 +7,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { listProductions, loadProduction, shotRecipe, ASSETS, CONTROLS } from './lib.mjs';
+import { loadCut, cutProblems } from './cutplan.mjs';
 
 const problems = [];
 const haveLibrary = fs.existsSync(path.join(ASSETS, 'characters'));
@@ -46,10 +48,11 @@ for (const id of ids) {
       }
     }
   }
-  const editFile = path.join(p.dir, 'edit.json');
-  if (fs.existsSync(editFile)) {
-    const edit = JSON.parse(fs.readFileSync(editFile, 'utf8'));
-    for (const c of edit.cuts ?? []) if (!ids.has(c.shot)) problems.push(`${at('edit.json')}: no shot ${c.shot}`);
+  try {
+    const { edit, audio } = loadCut(p);
+    for (const x of cutProblems(p, edit, audio)) problems.push(`productions/${id}/${x}`);
+  } catch (e) {
+    problems.push(`productions/${id}: edit.json or audio.json: ${e.message}`);
   }
 }
 

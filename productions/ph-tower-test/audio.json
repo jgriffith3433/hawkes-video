@@ -1,5 +1,5 @@
 {
- "music": { "prompt": "Low, tense synth pulse, slow build, corporate thriller", "volume": 0.25 },
+ "music": { "prompt": "Low, tense synth pulse, slow build, corporate thriller, instrumental", "bpm": 80, "volume": 0.25, "fadeIn": 1, "fadeOut": 2 },
  "lines": [],
  "keepShotSound": true
 }

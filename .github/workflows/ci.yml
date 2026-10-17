@@ -1,4 +1,4 @@
-# Checks every production on each push (no Hawkes Gen, no GPU; the cast is checked only where hawkes-assets is next to it).
+# Checks every production and tests the cut plan on each push (no Hawkes Gen, no GPU; the cast is checked only where hawkes-assets is next to it).
 name: CI
 on:
   push:
@@ -15,3 +15,4 @@ jobs:
         with:
           node-version: 24
       - run: node tools/check.mjs
+      - run: npm test

@@ -1,8 +1,10 @@
 {
  "cuts": [
-  { "shot": "01-walk" },
-  { "shot": "02-look-up", "transition": "cut" }
+  { "shot": "01-walk", "transition": "crossfade", "seconds": 0.5 },
+  { "shot": "02-look-up" }
  ],
  "audio": "audio.json",
- "captions": []
+ "captions": [],
+ "fadeIn": 0.5,
+ "fadeOut": 1
 }

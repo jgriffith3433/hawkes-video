@@ -6,6 +6,8 @@
   "description": "Hawkes videos as data: productions, shots and edits that Hawkes Gen makes from the Hawkes Assets cast.",
   "scripts": {
     "check": "node tools/check.mjs",
-    "make": "node tools/make.mjs"
+    "make": "node tools/make.mjs",
+    "cut": "node tools/cut.mjs",
+    "test": "node --test \"test/*.test.mjs\""
   }
 }
